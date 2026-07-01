@@ -248,7 +248,7 @@ class endodac(nn.Module):
                 use_dynamic_fusion=True
             )
 
-        print(" {len(encoder.blocks)} Transformer_blocks")
+        print(f" {len(encoder.blocks)} Transformer_blocks")
 
 
     def _apply_dora(self, encoder):
