@@ -34,7 +34,8 @@ python test_simple.py --model_path <your_model_path>  --image_path <your_image_p
 ```
 The following example command evaluates the epoch 1 weights of the model
 ```
-python evaluate_depth.py --data_path <your_data_path> --load_weights_folder "/hy-tmp/EndoHAR/logs/models/weights_1" --eval_mono
+python evaluate_depth.py --data_path <your_data_path> --load_weights_folder "/EndoHAR/logs/models/weights_1" --eval_mono
+python evaluate_pose.py --data_path <your_data_path> --load_weights_folder "/EndoHAR/logs/models/weights_1" --eval_mono
 ```
 
 
