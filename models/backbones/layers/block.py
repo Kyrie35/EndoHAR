@@ -60,8 +60,8 @@ class Block(nn.Module):
         attn_class: Callable[..., nn.Module] = Attention,
         ffn_layer: Callable[..., nn.Module] = Mlp,
         use_residual_block=False,
-        res_conv_kernel_size=7,
-        res_conv_padding=3,
+        res_conv_kernel_size=3,
+        res_conv_padding=1,
         dilation_rate=1,
         include_cls_token=True,
     ) -> None:
