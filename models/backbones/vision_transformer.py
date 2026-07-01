@@ -173,8 +173,8 @@ class DinoVisionTransformer(nn.Module):
             for i in range(depth)
         ]
 
-        print("conv_index: {residual_block_indexes}")
-        print("dilation_rate: {dilation_rates}")
+        print(f"conv_index: {residual_block_indexes}")
+        print(f"dilation_rate: {dilation_rates}")
 
         if block_chunks > 0:
             self.chunked_blocks = True
